@@ -1,7 +1,16 @@
-# Shopping_v2
->Modificación: Quitados los params de la url y adaptada la función init() a location.toString()<br />
->Modificación: Cesta, cuando le das al botón '-' y hay un sólo elemento lo quita.<br />
->Añadido: Se guarda en el local el subtotal para no calcularlo luego.<br />
->Modificación: Se quitaron las imágenes de las categorías (tardaban mucho en cargarse), ahora se muestran en una fila superior continua que al llegar a algún extremo vuelve a comenzar. Los botones son responsive en css y también en js.<br />
->Modificación: Cambió de estética general.<br />
->Correcciones varias.<br />
+# Shopping
+
+Práctica de un carrito de la compra utilizando **javascript** y la api **[dummyJSON.com](http://dummyjson.com)**
+
+---
+## Operativa:
+1. Se elige la *categoría*.
+2. Se agrega el producto a la *cesta*.   
+**Se pueden agregar cualquier cantidad de productos y de cualquier categoría a la cesta.*
+
+### Cesta:
+* Se puede modificar la cantidad de cada producto o quitarlo directamente.
+* También permite vaciar la cesta o finalizar la compra.
+
+#### Nota:
+Los productos de la cesta se almacenan en el local storage, al igual que la última categoría elegida.
