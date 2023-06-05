@@ -1,21 +1,30 @@
-* {
+*
+{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body {
+body
+{
     font-family: 'Lucida Sans';
     min-width: 300px;
-    margin: 0 auto;
 }
 
-header {
+header
+{
     background-color: black;
     color: white;
 }
 
-#divStatus {
+main
+{
+    margin: 0 auto;
+    width: 95%;
+}
+
+#divStatus
+{
     position: static;
     background-color: rgb(255, 255, 255);
     border: 1px solid black;
@@ -26,38 +35,46 @@ header {
     display: none;
 }
 
-#divStatus p:last-child {
+#divStatus p:last-child
+{
     color: rgb(5, 55, 86);
 }
 
-h1 {
+h1
+{
     padding: 5px;
     text-align: center;
     font-size: 1.7em;
+    padding-top: 15px;
 }
 
 
 /* CESTA********************************************* */
-#cesta {
+#cesta
+{
     padding: 5px;
     display: grid;
     justify-content: right;
 }
 
-#spnCantidad {
+#spnCantidad
+{
     font-size: 0.7em;
     padding-right: 5px;
 }
 
-#btnCesta {
+#btnCesta
+{
     color: white;
 }
 
-#btnCesta:hover {
+#btnCesta:hover
+{
     color: yellowgreen;
 }
 
-#cesta>button:first-of-type {
+#cesta > button:first-of-type
+{
     background-color: transparent;
     border: none;
     padding: 5px;
@@ -66,7 +83,8 @@ h1 {
     cursor: pointer;
 }
 
-#divCesta {
+#divCesta
+{
     width: 300px;
     background-color: rgb(255, 255, 255);
     border: 1px solid black;
@@ -78,14 +96,16 @@ h1 {
     z-index: 1;
 }
 
-#divCestaCart {
+#divCestaCart
+{
     font-size: 0.6em;
     min-width: 320px;
     margin: 0 auto;
 }
 
 
-#btnOcultar {
+#btnOcultar
+{
     border: none;
     padding: 5px;
     background-color: rgb(216, 249, 85);
@@ -97,7 +117,8 @@ h1 {
 
 
 /* CESTA TABLA********************************************* */
-table {
+table
+{
     width: 95%;
     margin: 5px auto;
     text-align: center;
@@ -106,24 +127,29 @@ table {
     color: black;
 }
 
-.producto {
+.producto
+{
     text-align: left;
     text-indent: 5px;
 }
 
-th {
+th
+{
     border-bottom: 2px solid black;
 }
 
-tr {
+tr
+{
     height: 45px;
 }
 
-tr:not(:only-child) {
+tr:not(:only-child)
+{
     border-bottom: 1px dotted black;
 }
 
-tfoot {
+tfoot
+{
     text-align: right;
     font-size: 1.2em;
     font-weight: bold;
@@ -131,11 +157,13 @@ tfoot {
     color: rgb(6, 106, 139);
 }
 
-tbody {
+tbody
+{
     font-size: 0.9em;
 }
 
-tbody button {
+tbody button
+{
     text-align: center;
     border: none;
     background-color: rgb(255, 255, 255);
@@ -150,21 +178,25 @@ tbody button {
 }
 
 
-tbody button:hover {
+tbody button:hover
+{
     background-color: rgb(144, 209, 245);
 }
 
-tbody td:last-child button {
+tbody td:last-child button
+{
     background-color: white;
     color: red;
     box-shadow: 0 0 3px 2px rgb(252, 1, 1);
 }
 
-tbody td:last-child button:hover {
+tbody td:last-child button:hover
+{
     background-color: rgb(255, 199, 199);
 }
 
-.cantidad {
+.cantidad
+{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     height: 45px;
@@ -173,7 +205,8 @@ tbody td:last-child button:hover {
     justify-items: center;
 }
 
-tbody img {
+tbody img
+{
     width: 40px;
     height: 40px;
     object-fit: contain;
@@ -184,7 +217,8 @@ tbody img {
 
 #btnFinalizar,
 #btnVaciarCesta,
-#btnComprar {
+#btnComprar
+{
     padding: 8px 15px;
     margin: 10px;
     background-color: rgb(255, 255, 255);
@@ -194,11 +228,13 @@ tbody img {
 }
 
 #btnComprar,
-#btnFinalizar {
+#btnFinalizar
+{
     float: right;
 }
 
-#btnSeguir {
+#btnSeguir
+{
     background-color: transparent;
     border: none;
     padding: 8px 15px;
@@ -207,7 +243,8 @@ tbody img {
     color: white;
 }
 
-#divCompraFinalizada {
+#divCompraFinalizada
+{
     margin-top: 30px;
     padding: 50px;
     text-align: center;
@@ -218,42 +255,49 @@ tbody img {
 
 
 /* CARD CATEGORIAS********************************************* */
-.secCategorias {
+.secCategorias
+{
     min-width: 322px;
 }
 
 .secCategorias,
-.secItems {
+.secItems
+{
     margin: 0 auto;
     padding-bottom: 15px;
 }
 
-.secItems {
-    background-color: rgba(47, 79, 79, 0.527);
+.secItems
+{
+    background-color: rgb(241, 241, 241);
     border-radius: 20px;
     box-shadow: 0 0 5px 1px black;
 }
 
 #btnLeft,
-#btnRight {
+#btnRight
+{
     border: none;
     background-color: transparent;
     font-size: 40px;
 }
 
 #btnLeft i,
-#btnRight i {
+#btnRight i
+{
     color: rgb(93, 94, 93);
     cursor: pointer;
 }
 
 #btnLeft i:hover,
-#btnRight i:hover {
+#btnRight i:hover
+{
     color: rgb(5, 88, 84);
 }
 
 .secCategorias h2,
-.secItems h2 {
+.secItems h2
+{
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 20px;
@@ -264,12 +308,14 @@ tbody img {
     box-shadow: 1px 1px 3px rgb(0, 0, 0);
 }
 
-.secItems h2 {    
-    background-color: rgba(0, 0, 0, 0.288);    
+.secItems h2
+{
+    background-color: rgba(0, 0, 0, 0.288);
     text-shadow: 1px 1px 3px rgb(0, 0, 0);
 }
 
-.divGridContCat {
+.divGridContCat
+{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 5px;
@@ -277,7 +323,8 @@ tbody img {
     justify-items: center;
 }
 
-.divCardCat {
+.divCardCat
+{
     border-radius: 3px;
     padding: 5px;
     cursor: pointer;
@@ -288,11 +335,13 @@ tbody img {
     transition: background-color 100mst;
 }
 
-.divCardCat:hover {
+.divCardCat:hover
+{
     box-shadow: 0px 0px 5px 2px rgb(1, 75, 85);
 }
 
-.divCardCat h3 {
+.divCardCat h3
+{
     font-size: 1em;
     text-shadow: 0 0 5px rgb(0, 0, 0);
     text-align: center;
@@ -300,7 +349,8 @@ tbody img {
     color: white;
 }
 
-.divCardCat div {
+.divCardCat div
+{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -310,16 +360,19 @@ tbody img {
     border-radius: 10px;
 }
 
-.catSelected {
-    background-color: rgb(2, 149, 194);
+.catSelected
+{
+    background-color: rgb(122, 180, 198);
 }
 
-.catSelected div h3 {
+.catSelected div h3
+{
     color: rgb(92, 221, 238);
 }
 
 /* CARD ITEM********************************************* */
-.divGridContItem {
+.divGridContItem
+{
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -327,7 +380,8 @@ tbody img {
     margin: 0 auto;
 }
 
-.divCardItem {
+.divCardItem
+{
     background-color: white;
     box-shadow: 0px 0px 3px black;
     border: 1px solid black;
@@ -339,12 +393,14 @@ tbody img {
     text-align: center;
 }
 
-.divCardItem:hover {
+.divCardItem:hover
+{
     box-shadow: 0 0 10px black;
     border: 1px solid rgb(255, 255, 255)
 }
 
-.divStars {
+.divStars
+{
     box-shadow: 0 0 3px black;
     border-radius: 15px;
     padding: 5px;
@@ -354,7 +410,8 @@ tbody img {
     margin: 5px;
 }
 
-.divCardItem>img {
+.divCardItem > img
+{
     width: 200px;
     height: 200px;
     object-fit: contain;
@@ -364,14 +421,16 @@ tbody img {
     box-shadow: 0 0 3px black;
 }
 
-.divCardItem h3 {
+.divCardItem h3
+{
     color: darkslategray;
     padding: 5px;
     font-size: 1.1em;
     width: 200px;
 }
 
-.divCardCat p {
+.divCardCat p
+{
     font-size: 1.3em;
     color: yellow;
     text-shadow: 1px 1px 3px black;
@@ -382,23 +441,27 @@ tbody img {
     border-radius: 5px;
 }
 
-.divCardCat p:hover {
+.divCardCat p:hover
+{
     text-shadow: 0 0 3px rgb(0, 0, 0);
     color: rgb(179, 245, 250);
 }
 
-.divCardItem p {
+.divCardItem p
+{
     margin-top: 5px;
     padding: 2px;
     font-style: italic;
 }
 
-.divCardItem p span {
+.divCardItem p span
+{
     color: darkdarkolivegreen;
     font-weight: bold;
 }
 
-.divCardItem button {
+.divCardItem button
+{
     margin-top: 10px;
     width: 120px;
     background-color: rgb(3, 107, 167);
@@ -409,25 +472,40 @@ tbody img {
     cursor: pointer;
 }
 
-.divCardItem button:hover {
+.divCardItem button:hover
+{
     color: rgb(6, 199, 206);
 }
 
 
 
 /* FOOTER ********************************************************* */
-footer {
+footer
+{
     margin-top: 20px;
     background-color: rgb(0, 0, 0);
 
 }
 
-footer p {
-    color: white;
+footer p
+{
     padding: 20px;
 }
 
-.ocultar {
+#pp
+{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+#pp:hover
+{
+    color: yellowgreen;
+}
+
+.ocultar
+{
     display: none;
 }
 
@@ -436,131 +514,161 @@ footer p {
 /* Responsive ****************************************************/
 
 /* 430 */
-@media screen and (min-width:430px) {
-    h1 {
+@media screen and (min-width:430px)
+{
+    h1
+    {
         font-size: 2.5em;
     }
 
-    #divStatus {
+    #divStatus
+    {
         font-size: 0.6em;
     }
 
-    #divCesta {
+    #divCesta
+    {
         width: 360px;
         top: 95px;
         font-size: 0.7em;
     }
 
-    #btnOcultar {
+    #btnOcultar
+    {
         font-size: 0.8em;
     }
 
-    #divCestaCart {
+    #divCestaCart
+    {
         font-size: 0.8em;
         max-width: 550px;
     }
 
     .secCategorias,
-    .secItems {
+    .secItems
+    {
         max-width: 550px;
     }
 
-    .divGridContCat {
+    .divGridContCat
+    {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .divCardItem h3 {
+    .divCardItem h3
+    {
         width: 220px;
     }
 }
 
 /* 640 */
-@media screen and (min-width:640px) {
-    h1 {
+@media screen and (min-width:640px)
+{
+    h1
+    {
         font-size: 2.8em;
     }
 
     .secCategorias h2,
-    .secItems h2 {
+    .secItems h2
+    {
         font-size: 1.5em;
     }
 
-    #divStatus {
+    #divStatus
+    {
         font-size: 0.6em;
     }
 
-    #divCestaCart {
+    #divCestaCart
+    {
         font-size: 0.9em;
         max-width: 700px;
     }
 
-    #divCesta {
+    #divCesta
+    {
         width: 440px;
         top: 105px;
         font-size: 0.8em;
     }
 
     .secCategorias,
-    .secItems {
+    .secItems
+    {
         max-width: 700px;
     }
 
-    .divGridContCat {
+    .divGridContCat
+    {
         grid-template-columns: repeat(5, 1fr);
     }
 
-    .divGridContItem {
+    .divGridContItem
+    {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 /* 768 */
-@media screen and (min-width:768px) {
-    h1 {
+@media screen and (min-width:768px)
+{
+    h1
+    {
         font-size: 3.5em;
     }
 
-    #divStatus {
+    #divStatus
+    {
         font-size: 0.7em;
     }
 
-    #divCesta {
+    #divCesta
+    {
         width: 500px;
         right: 15px;
         top: 115px;
     }
 
-    #divCestaCart {
+    #divCestaCart
+    {
         font-size: 1em;
         max-width: 850px;
     }
 
     .secCategorias,
-    .secItems {
+    .secItems
+    {
         max-width: 850px;
     }
 
-    .divGridContCat {
+    .divGridContCat
+    {
         grid-template-columns: repeat(6, 1fr);
     }
 
-    .divCardCat h3 {
+    .divCardCat h3
+    {
         font-size: 1.1em;
     }
 
 }
 
 /* 992 */
-@media screen and (min-width:992px) {
-    h1 {
+@media screen and (min-width:992px)
+{
+    h1
+    {
         font-size: 4em;
     }
 
-    #divStatus {
+    #divStatus
+    {
         font-size: 0.8em;
     }
 
-    #divCesta {
+    #divCesta
+    {
         width: 600px;
         top: 120px;
         font-size: 0.9em;
@@ -568,59 +676,72 @@ footer p {
 
     #divCestaCart,
     .secCategorias,
-    .secItems {
+    .secItems
+    {
         max-width: 1080px;
     }
 
-    .divGridContCat {
+    .divGridContCat
+    {
         grid-template-columns: repeat(7, 1fr);
     }
 
-    .divGridContItem {
+    .divGridContItem
+    {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-@media screen and (min-width:1200px) {
-    h1 {
+@media screen and (min-width:1200px)
+{
+    h1
+    {
         font-size: 5em;
     }
 
-    #divStatus {
+    #divStatus
+    {
         font-size: 0.9em;
     }
 
-    #divCesta {
+    #divCesta
+    {
         width: 650px;
         top: 145px;
     }
 
     #divCestaCart,
     .secCategorias,
-    .secItems {
+    .secItems
+    {
         max-width: 1250px;
     }
 
-    .divGridContCat {
+    .divGridContCat
+    {
         grid-template-columns: repeat(8, 1fr);
         column-gap: 10px;
     }
 
     #btnLeft,
-    #btnRight {
+    #btnRight
+    {
         font-size: 40px;
     }
 
-    .divCardCat {
+    .divCardCat
+    {
         width: 180px;
         height: 120px;
     }
 
-    .divCardCat h3 {
+    .divCardCat h3
+    {
         font-size: 1.2em;
     }
 
-    .divGridContItem {
+    .divGridContItem
+    {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
